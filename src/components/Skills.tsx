@@ -43,7 +43,10 @@ const SkillSubSection = ({
 
 const Skills: React.FC = () => {
   return (
-    <section className="bg-[#2B7A78] dark:bg-[#2B7A78] py-20 md:py-24">
+    <section
+      className="bg-[#2B7A78] dark:bg-[#2B7A78] py-20 md:py-24"
+      id="skills"
+    >
       <div className="container mx-auto px-4 md:px-6">
         <div className="space-y-2 text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
