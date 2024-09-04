@@ -5,6 +5,7 @@ import Skills from "../components/Skills";
 import Languages from "../components/Languages";
 import Strengths from "../components/Strengths";
 import Education from "../components/Education";
+import Hobbies from "../components/Hobbies";
 
 const Home: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
       <Languages />
       <Strengths />
       <Education />
+      <Hobbies />
     </div>
   );
 };
