@@ -3,6 +3,7 @@ import General from "../components/General";
 import WorkExperience from "../components/WorkExperience";
 import Skills from "../components/Skills";
 import Languages from "../components/Languages";
+import Strengths from "../components/Strengths";
 
 const Home: React.FC = () => {
   return (
@@ -11,11 +12,7 @@ const Home: React.FC = () => {
       <WorkExperience />
       <Skills />
       <Languages />
-      {/*<main className="relative h-screen overflow-y-scroll">*/}
-      {/*  <div className="">*/}
-      {/*    <Contact />*/}
-      {/*  </div>*/}
-      {/*</main>*/}
+      <Strengths />
     </div>
   );
 };
