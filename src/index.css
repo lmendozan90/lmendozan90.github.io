@@ -8,3 +8,12 @@ html {
   font-family: Saira, sans-serif;
 }
 
+@layer utilities {
+  .custom-marker::marker {
+    unicode-bidi: isolate;
+    @apply tabular-nums normal-case;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+  }
+}
