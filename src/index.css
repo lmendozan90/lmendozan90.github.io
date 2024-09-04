@@ -3,10 +3,8 @@
 @tailwind utilities;
 
 html {
-  font-size: 1vw;
-  position: relative;
   width: 100%;
   line-height: 1.15;
-  overflow: hidden;
+  font-family: Saira, sans-serif;
 }
 
