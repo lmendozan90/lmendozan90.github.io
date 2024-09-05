@@ -13,15 +13,17 @@ const Home: React.FC = () => {
   return (
     <div className="relative h-full p-0 overflow-y-hidden">
       <PlanetBackgroundIcon />
-      <div className="relative z-10">
+      <div className="relative z-10" id="outer-container">
         <MenuList />
-        <General />
-        <WorkExperience />
-        <Skills />
-        <Languages />
-        <Strengths />
-        <Education />
-        <Hobbies />
+        <div id="page-wrap">
+          <General />
+          <WorkExperience />
+          <Skills />
+          <Languages />
+          <Strengths />
+          <Education />
+          <Hobbies />
+        </div>
       </div>
     </div>
   );

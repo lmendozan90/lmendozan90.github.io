@@ -1,17 +1,24 @@
 import * as React from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import clsx from "clsx";
 import CrossIcon from "../assets/icons/crossIcon";
 import { HashLink } from "react-router-hash-link";
-import { slide as Menu } from "react-burger-menu";
+import { push as Menu } from "react-burger-menu";
 import SandwichIcon from "../assets/icons/sandwichIcon";
 import { useLocation } from "react-router-dom";
 
 const MenuList: React.FC = () => {
   const location = useLocation();
   const [displayMenu, setDisplayMenu] = useState(false);
+  const [innerWidth, setInnerWidth] = useState(window.innerWidth);
   // Helper function to check if the link is active
   const isActiveLink = (hash: string) => location.hash === hash;
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setInnerWidth(window.innerWidth);
+    });
+  }, []);
 
   return (
     <>
@@ -25,12 +32,20 @@ const MenuList: React.FC = () => {
       </div>
       <Menu
         right
-        width="100%"
+        width={
+          // Set different widths for each breakpoint
+          innerWidth >= 768
+            ? "468px" // Large screen (1200px and above)
+            : "100%" // Small screen (below 768px)
+        }
         isOpen={displayMenu}
         menuClassName={
           "bg-[#291f10] flex flex-col h-full overflow-y-auto py-0 px-6 pt-[150px]"
         }
         customBurgerIcon={false}
+        overlayClassName={"!bg-[#36f3d1] !bg-opacity-50"}
+        pageWrapId={"page-wrap"}
+        outerContainerId={"outer-container"}
       >
         <div className="!flex items-center h-10 left-0 mt-[30px] mx-6 mb-0 fixed right-0 top-0 z-30">
           <button
