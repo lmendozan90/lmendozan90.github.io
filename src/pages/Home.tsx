@@ -11,21 +11,23 @@ import PlanetBackgroundIcon from "../assets/icons/planetBackgroundIcon";
 
 const Home: React.FC = () => {
   return (
-    <div className="relative h-full p-0 overflow-y-hidden">
+    <>
       <PlanetBackgroundIcon />
-      <div className="relative z-10" id="outer-container">
-        <MenuList />
-        <div id="page-wrap">
-          <General />
-          <WorkExperience />
-          <Skills />
-          <Languages />
-          <Strengths />
-          <Education />
-          <Hobbies />
+      <div className="relative h-full p-0 overflow-y-hidden">
+        <div className="relative z-10" id="outer-container">
+          <MenuList />
+          <div id="page-wrap">
+            <General />
+            <WorkExperience />
+            <Skills />
+            <Languages />
+            <Strengths />
+            <Education />
+            <Hobbies />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

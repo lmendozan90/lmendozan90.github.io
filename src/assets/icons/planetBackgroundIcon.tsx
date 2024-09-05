@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const PlanetBackgroungIcon = () => {
+  const [scrollHeight, setScrollHeight] = useState(7032);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setScrollHeight(document.documentElement.scrollHeight);
+    });
+  }, []);
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1024 11200"
-      className="top-0 left-0 absolute w-full pointer-events-none box-border hidden md:block"
+      viewBox={`0 0 1024 ${scrollHeight}`}
+      className="hidden md:block top-0 left-0 absolute w-full pointer-events-none box-border h-full overflow-y-hidden"
     >
       <defs>
         <linearGradient id="planet1" gradientTransform="rotate(90)">
