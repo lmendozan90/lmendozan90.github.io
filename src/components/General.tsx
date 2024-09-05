@@ -11,14 +11,14 @@ const General: React.FC = () => {
         <div className="mx-auto mb-[27px]">
           <RocketIcon width="38" height="38" fill="currentColor" />
         </div>
-        <span className="text-4xl leading-[46px] font-bold">
+        <span className="text-4xl leading-[46px] font-bold md:px-[12.5%] md:text-[46px] md:leading-[56px]">
           Fernando Mendoza Nieves
         </span>
       </header>
       {/* General Info*/}
-      <section className="border-t border-[#36f3d1] mt-10 pt-10">
+      <section className="border-t border-[#36f3d1] mt-10 pt-10 md:mt-[60px] md:pt-[60px] md:px-[12.5%]">
         <div className="mb-[30px]">
-          <div className="grid gap-4">
+          <div className="grid gap-4 md:grid-cols-2 md:gap-x-4 md:gap-y-5">
             <div className="flex flex-col">
               <span className="font-bold text-base">Date of Birth</span>
               <span>January 1st 1990</span>
@@ -45,8 +45,6 @@ const General: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section>
         <p>
           I'm a dynamic Software Engineer with a background in Test Engineering,
           now focused on Software Development. My transition has been immensely

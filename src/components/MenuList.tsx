@@ -11,11 +11,7 @@ const MenuList: React.FC = () => {
   const location = useLocation();
   const [displayMenu, setDisplayMenu] = useState(false);
   // Helper function to check if the link is active
-  const isActiveLink = (hash: string) => {
-    console.log("location.hash: ", location.hash);
-    console.log("hash: ", hash);
-    return location.hash === hash;
-  };
+  const isActiveLink = (hash: string) => location.hash === hash;
 
   return (
     <>
@@ -34,6 +30,7 @@ const MenuList: React.FC = () => {
         menuClassName={
           "bg-[#291f10] flex flex-col h-full overflow-y-auto py-0 px-6 pt-[150px]"
         }
+        customBurgerIcon={false}
       >
         <div className="!flex items-center h-10 left-0 mt-[30px] mx-6 mb-0 fixed right-0 top-0 z-30">
           <button

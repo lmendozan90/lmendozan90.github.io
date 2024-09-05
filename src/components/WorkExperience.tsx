@@ -19,7 +19,7 @@ const WorkExperience: React.FC = () => {
       <section className="border-t border-[#36f3d1] mt-10 pt-10">
         {/* Work Experience */}
         {JobsDescription.map((job, index) => (
-          <article key={index} className="mb-2.5 flex break-words">
+          <article key={index} className="mb-2.5 flex break-words z-10">
             <div className="pr-4 flex flex-col min-w-10 items-center">
               <BriefcaseIcon width="38" height="38" fill="currentColor" />
               <div className="h-full w-[1px] text-[#36f3d1] bg-current"></div>

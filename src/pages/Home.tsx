@@ -1,7 +1,4 @@
 import * as React from "react";
-import { useState } from "react";
-import { slide as Menu } from "react-burger-menu";
-import { HashLink } from "react-router-hash-link";
 import MenuList from "../components/MenuList";
 import General from "../components/General";
 import WorkExperience from "../components/WorkExperience";
@@ -10,20 +7,22 @@ import Languages from "../components/Languages";
 import Strengths from "../components/Strengths";
 import Education from "../components/Education";
 import Hobbies from "../components/Hobbies";
-import SandwichIcon from "../assets/icons/sandwichIcon";
-import CrossIcon from "../assets/icons/crossIcon";
+import PlanetBackgroundIcon from "../assets/icons/planetBackgroundIcon";
 
 const Home: React.FC = () => {
   return (
-    <div className="">
-      <MenuList />
-      <General />
-      <WorkExperience />
-      <Skills />
-      <Languages />
-      <Strengths />
-      <Education />
-      <Hobbies />
+    <div className="relative h-full p-0 overflow-y-hidden">
+      <PlanetBackgroundIcon />
+      <div className="relative z-10">
+        <MenuList />
+        <General />
+        <WorkExperience />
+        <Skills />
+        <Languages />
+        <Strengths />
+        <Education />
+        <Hobbies />
+      </div>
     </div>
   );
 };
