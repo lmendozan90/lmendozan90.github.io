@@ -3,7 +3,10 @@ import AstronautIcon from "../assets/icons/astronautIcon";
 
 const Languages: React.FC = () => {
   return (
-    <div className="border-t border-[#36f3d1] px-[30px] pt-8 pb-[90px]">
+    <div
+      id="languages"
+      className="border-t border-[#36f3d1] px-[30px] pt-8 pb-[90px]"
+    >
       <div className="text-center flex flex-col items-center">
         <div className="mx-auto mb-[27px]">
           <AstronautIcon width="38" height="38" fill="currentColor" />

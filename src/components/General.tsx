@@ -4,7 +4,10 @@ import RocketIcon from "../assets/icons/rocketIcon";
 const General: React.FC = () => {
   return (
     <div className="px-[30px] pt-8 pb-[90px]">
-      <header className="text-center flex flex-col items-center">
+      <header
+        id="personalInformation"
+        className="text-center flex flex-col items-center"
+      >
         <div className="mx-auto mb-[27px]">
           <RocketIcon width="38" height="38" fill="currentColor" />
         </div>

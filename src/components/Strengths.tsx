@@ -3,7 +3,10 @@ import StrengthsIcon from "../assets/icons/strengthsIcon";
 
 const Strengths: React.FC = () => {
   return (
-    <div className="border-t border-[#36f3d1] px-[30px] pt-8 pb-[90px]">
+    <div
+      id="strengths"
+      className="border-t border-[#36f3d1] px-[30px] pt-8 pb-[90px]"
+    >
       <div className="text-center flex flex-col items-center">
         <div className="mx-auto mb-[27px]">
           <StrengthsIcon width="38" height="38" fill="currentColor" />
