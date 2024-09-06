@@ -17,8 +17,9 @@ const General: React.FC = () => {
       </header>
       {/* General Info*/}
       <section className="border-t border-[#36f3d1] mt-10 pt-10 md:mt-[60px] md:pt-[60px] md:px-[12.5%]">
-        <div className="mb-[30px]">
-          <div className="grid gap-4 md:grid-cols-2 md:gap-x-4 md:gap-y-5">
+        <div className="mb-[30px] md:mb-[60px] xl:grid xl:grid-cols-5">
+          <div className="hidden xl:flex xl:items-center xl:w-[π xl:h-[163px] xl:justify-center xl:relative"></div>
+          <div className="grid gap-4 md:grid-cols-2 md:gap-x-4 md:gap-y-5 xl:col-span-3">
             <div className="flex flex-col">
               <span className="font-bold text-base">Date of Birth</span>
               <span>January 1st 1990</span>
