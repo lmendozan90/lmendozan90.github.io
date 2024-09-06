@@ -12,12 +12,14 @@ const Education: React.FC = () => {
         <div className="mx-auto mb-[27px]">
           <PlanetIcon width="38" height="38" fill="currentColor" />
         </div>
-        <span className="text-4xl leading-[46px] font-bold">Education</span>
+        <span className="text-4xl leading-[46px] font-bold md:px-[12.5%] md:text-[46px] md:leading-[56px]">
+          Education
+        </span>
       </div>
-      <section className="border-t border-[#36f3d1] mt-10 pt-10">
+      <section className="border-t border-[#36f3d1] mt-10 pt-10 md:mt-[60px] md:pt-[60px] md:px-[12.5%]">
         {EducationsDescription.map((education, index) => (
           <article key={index} className="mb-2.5 flex break-words">
-            <div className="pr-4 flex flex-col min-w-10 items-center">
+            <div className="pr-4 flex flex-col min-w-10 items-center md:ml-[-40px]">
               <BriefcaseIcon width="38" height="38" fill="currentColor" />
               <div className="h-full w-[1px] text-[#36f3d1] bg-current"></div>
             </div>

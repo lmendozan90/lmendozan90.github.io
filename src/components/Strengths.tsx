@@ -11,9 +11,11 @@ const Strengths: React.FC = () => {
         <div className="mx-auto mb-[27px]">
           <StrengthsIcon width="38" height="38" fill="currentColor" />
         </div>
-        <span className="text-4xl leading-[46px] font-bold">Strengths</span>
+        <span className="text-4xl leading-[46px] font-bold md:px-[12.5%] md:text-[46px] md:leading-[56px]">
+          Strengths
+        </span>
       </div>
-      <section className="border-t border-[#36f3d1] mt-10 pt-10">
+      <section className="border-t border-[#36f3d1] mt-10 pt-10 md:mt-[60px] md:pt-[60px] md:px-[12.5%]">
         {/* Strengths */}
         <div className="flex flex-wrap justify-center mt-0 mx-[-15px] mb-[-30px]">
           {StrengthsDescription.map((strength, index) => (

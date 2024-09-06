@@ -12,7 +12,7 @@ import PlanetBackgroundIcon from "../assets/icons/planetBackgroundIcon";
 const Home: React.FC = () => {
   return (
     <>
-      <PlanetBackgroundIcon />
+      {/*<PlanetBackgroundIcon />*/}
       <div className="relative h-full p-0 overflow-y-hidden">
         <div className="relative z-10" id="outer-container">
           <MenuList />

@@ -15,16 +15,18 @@ const Hobbies: React.FC = () => {
         <div className="mx-auto mb-[27px]">
           <TelescopeIcon width="38" height="38" fill="currentColor" />
         </div>
-        <span className="text-4xl leading-[46px] font-bold">Hobbies</span>
+        <span className="text-4xl leading-[46px] font-bold md:px-[12.5%] md:text-[46px] md:leading-[56px]">
+          Hobbies
+        </span>
       </div>
-      <section className="border-t border-[#36f3d1] mt-10 pt-10">
-        <div className="mb-[-50px] flex flex-wrap justify-start">
+      <section className="border-t border-[#36f3d1] mt-10 pt-10 md:mt-[60px] md:pt-[60px] md:px-[12.5%]">
+        <div className="mb-[-50px] flex flex-wrap !justify-start">
           {HobbiesDescription.map((hobby, index) => (
-            <div className="mb-[50px] basis-1/2 items-center flex flex-col">
+            <div className="mb-[50px] basis-1/2 items-center flex flex-col md:basis-1/3">
               <span className="h-10 w-10 mb-[15px] min-h-10">
                 <hobby.icon width="40" height="40" fill="currentColor" />
               </span>
-              <span className="mx-2">{hobby.name}</span>
+              <span className="mx-2 text-center">{hobby.name}</span>
             </div>
           ))}
         </div>

@@ -11,14 +11,21 @@ const Skills: React.FC = () => {
         <div className="mx-auto mb-[27px]">
           <AstronautIcon width="38" height="38" fill="currentColor" />
         </div>
-        <span className="text-4xl leading-[46px] font-bold">Skills</span>
+        <span className="text-4xl leading-[46px] font-bold md:px-[12.5%] md:text-[46px] md:leading-[56px]">
+          Skills
+        </span>
       </div>
-      <section className="border-t border-[#36f3d1] mt-10 pt-10">
+      <section className="border-t border-[#36f3d1] mt-10 pt-10 md:mt-[60px] md:pt-[60px] md:px-[12.5%]">
         <div className="flex flex-col">
-          <div className="mb-5 font-bold">TECHNICAL SKILLS</div>
+          <div className="mb-5 text-base leading-[26px] font-bold md:grid md:grid-cols-2 md:gap-x-[60px] text-right">
+            TECHNICAL SKILLS
+          </div>
           {SkillsDescription.map((skill, index) => (
-            <div key={index} className="flex flex-col mb-[25px]">
-              <span>{skill.name}</span>
+            <div
+              key={index}
+              className="flex flex-col mb-[25px] md:grid md:grid-cols-2 md:gap-x-[60px]"
+            >
+              <span className="md:text-right">{skill.name}</span>
               <span className="font-bold">{skill.experience}</span>
             </div>
           ))}

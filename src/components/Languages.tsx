@@ -11,13 +11,18 @@ const Languages: React.FC = () => {
         <div className="mx-auto mb-[27px]">
           <AstronautIcon width="38" height="38" fill="currentColor" />
         </div>
-        <span className="text-4xl leading-[46px] font-bold">Languages</span>
+        <span className="text-4xl leading-[46px] font-bold md:px-[12.5%] md:text-[46px] md:leading-[56px]">
+          Languages
+        </span>
       </div>
-      <section className="border-t border-[#36f3d1] mt-10 pt-10">
+      <section className="border-t border-[#36f3d1] mt-10 pt-10 md:mt-[60px] md:pt-[60px] md:px-[12.5%]">
         <div className="flex flex-col">
           {LanguagesDescription.map((language, index) => (
-            <div key={index} className="flex flex-col mb-[25px]">
-              <span>{language.name}</span>
+            <div
+              key={index}
+              className="flex flex-col mb-[25px] md:grid md:grid-cols-2 md:gap-x-[60px]"
+            >
+              <span className="md:text-right">{language.name}</span>
               <span className="font-bold">{language.experience}</span>
             </div>
           ))}
