@@ -7,13 +7,12 @@ import Languages from "../components/Languages";
 import Strengths from "../components/Strengths";
 import Education from "../components/Education";
 import Hobbies from "../components/Hobbies";
-import PlanetBackgroundIcon from "../assets/icons/planetBackgroundIcon";
 
 const Home: React.FC = () => {
   return (
     <>
-      {/*<PlanetBackgroundIcon />*/}
-      <div className="relative h-full p-0 overflow-y-hidden">
+      <div className="absolute h-screen w-full z-0 bg-cover bg-center"></div>
+      <div className="relative h-full p-0 overflow-y-hidden md:bg-repeat-y md:bg-contain md:bg-planets-bg">
         <div className="relative z-10" id="outer-container">
           <MenuList />
           <div id="page-wrap">
