@@ -1,20 +1,18 @@
 import * as React from "react";
+import Header from "./Header";
 import AstronautIcon from "../assets/icons/astronautIcon";
+import clsx from "clsx";
 
 const Skills: React.FC = () => {
   return (
     <div
       id="skills"
-      className="border-t border-[#36f3d1] px-[30px] pt-8 pb-[90px]"
+      className={clsx(
+        "border-t border-[#36f3d1] px-[30px] pt-6 pb-[90px]",
+        "xl:px-[calc(8.33%+20px)]",
+      )}
     >
-      <div className="text-center flex flex-col items-center">
-        <div className="mx-auto mb-[27px]">
-          <AstronautIcon width="38" height="38" fill="currentColor" />
-        </div>
-        <span className="text-4xl leading-[46px] font-bold md:px-[12.5%] md:text-[46px] md:leading-[56px]">
-          Skills
-        </span>
-      </div>
+      <Header Icon={AstronautIcon} title="Skills" />
       <section className="border-t border-[#36f3d1] mt-10 pt-10 md:mt-[60px] md:pt-[60px] md:px-[12.5%]">
         <div className="flex flex-col">
           <div className="mb-5 text-base leading-[26px] font-bold md:grid md:grid-cols-2 md:gap-x-[60px] text-right">

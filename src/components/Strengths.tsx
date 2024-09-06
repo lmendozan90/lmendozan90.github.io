@@ -1,20 +1,18 @@
 import * as React from "react";
 import StrengthsIcon from "../assets/icons/strengthsIcon";
+import clsx from "clsx";
+import Header from "./Header";
 
 const Strengths: React.FC = () => {
   return (
     <div
       id="strengths"
-      className="border-t border-[#36f3d1] px-[30px] pt-8 pb-[90px]"
+      className={clsx(
+        "border-t border-[#36f3d1] px-[30px] pt-6 pb-[90px]",
+        "xl:px-[calc(8.33%+20px)]",
+      )}
     >
-      <div className="text-center flex flex-col items-center">
-        <div className="mx-auto mb-[27px]">
-          <StrengthsIcon width="38" height="38" fill="currentColor" />
-        </div>
-        <span className="text-4xl leading-[46px] font-bold md:px-[12.5%] md:text-[46px] md:leading-[56px]">
-          Strengths
-        </span>
-      </div>
+      <Header Icon={StrengthsIcon} width="38" heigth="38" title="Strengths" />
       <section className="border-t border-[#36f3d1] mt-10 pt-10 md:mt-[60px] md:pt-[60px] md:px-[12.5%]">
         {/* Strengths */}
         <div className="flex flex-wrap justify-center mt-0 mx-[-15px] mb-[-30px]">

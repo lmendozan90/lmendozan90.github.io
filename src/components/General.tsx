@@ -1,24 +1,34 @@
 import * as React from "react";
+import clsx from "clsx";
+import Header from "./Header";
 import RocketIcon from "../assets/icons/rocketIcon";
+import AvatarOutlineIcon from "../assets/icons/avatarOutlineIcon";
 
 const General: React.FC = () => {
   return (
-    <div className="px-[30px] pt-8 pb-[90px]">
-      <header
-        id="personalInformation"
-        className="text-center flex flex-col items-center"
-      >
-        <div className="mx-auto mb-[27px]">
-          <RocketIcon width="38" height="38" fill="currentColor" />
-        </div>
-        <span className="text-4xl leading-[46px] font-bold md:px-[12.5%] md:text-[46px] md:leading-[56px]">
-          Fernando Mendoza Nieves
-        </span>
-      </header>
+    <div
+      id="personalInformation"
+      className={clsx("px-[30px] pt-8 pb-[90px]", "xl:px-[calc(8.33%+20px)]")}
+    >
+      <Header
+        Icon={RocketIcon}
+        width="38"
+        heigth="38"
+        title="Fernando Mendoza Nieves"
+      />
       {/* General Info*/}
       <section className="border-t border-[#36f3d1] mt-10 pt-10 md:mt-[60px] md:pt-[60px] md:px-[12.5%]">
         <div className="mb-[30px] md:mb-[60px] xl:grid xl:grid-cols-5">
-          <div className="hidden xl:flex xl:items-center xl:w-[π xl:h-[163px] xl:justify-center xl:relative"></div>
+          <div className="hidden xl:flex xl:items-center xl:w-[163px] xl:h-[163px] xl:justify-center xl:relative">
+            <span className="w-[136px] h-[136px]">
+              <img
+                className="rounded-full w-[136px] h-[136px]"
+                src="/images/fernando_photo.jpeg"
+                alt="Fernando Mendoza Nieves"
+              />
+            </span>
+            <AvatarOutlineIcon width="163" height="163" fill="currentColor" />
+          </div>
           <div className="grid gap-4 md:grid-cols-2 md:gap-x-4 md:gap-y-5 xl:col-span-3">
             <div className="flex flex-col">
               <span className="font-bold text-base">Date of Birth</span>
@@ -46,7 +56,7 @@ const General: React.FC = () => {
             </div>
           </div>
         </div>
-        <p>
+        <p className="xl:px-[20%]">
           I'm a dynamic Software Engineer with a background in Test Engineering,
           now focused on Software Development. My transition has been immensely
           rewarding, allowing me to leverage my wide-ranging expertise in Ruby

@@ -1,29 +1,53 @@
 import * as React from "react";
 import PlanetIcon from "../assets/icons/planetIcon";
 import BriefcaseIcon from "../assets/icons/briefcaseIcon";
+import clsx from "clsx";
+import Header from "./Header";
+import TrainIcon from "../assets/icons/trainIcon";
 
 const Education: React.FC = () => {
   return (
     <div
       id="education"
-      className="border-t border-[#36f3d1] px-[30px] pt-8 pb-[90px]"
+      className={clsx(
+        "border-t border-[#36f3d1] px-[30px] pt-6 pb-[90px]",
+        "xl:px-[calc(8.33%+20px)]",
+      )}
     >
-      <div className="text-center flex flex-col items-center">
-        <div className="mx-auto mb-[27px]">
-          <PlanetIcon width="38" height="38" fill="currentColor" />
-        </div>
-        <span className="text-4xl leading-[46px] font-bold md:px-[12.5%] md:text-[46px] md:leading-[56px]">
-          Education
-        </span>
-      </div>
-      <section className="border-t border-[#36f3d1] mt-10 pt-10 md:mt-[60px] md:pt-[60px] md:px-[12.5%]">
+      <Header Icon={PlanetIcon} width="38" heigth="38" title="Education" />
+      <section
+        className={clsx(
+          "border-t border-[#36f3d1] mt-10 pt-10 md:mt-[60px] md:pt-[60px] md:px-[12.5%]",
+          "xl:px-[10%]",
+        )}
+      >
         {EducationsDescription.map((education, index) => (
-          <article key={index} className="mb-2.5 flex break-words">
-            <div className="pr-4 flex flex-col min-w-10 items-center md:ml-[-40px]">
+          <article
+            key={index}
+            className={clsx(
+              "mb-2.5 flex break-words z-10",
+              "xl:w-[calc(50%-32px)]",
+              index % 2 == 0 ? "xl:flex-row-reverse" : "xl:ml-auto",
+            )}
+          >
+            <div
+              className={clsx(
+                "pr-4 flex flex-col min-w-10 items-center md:ml-[-40px]",
+                "xl:my-0 xl:py-0 ",
+                index % 2 == 0
+                  ? "xl:mr-[-42px] xl:ml-0 xl:pr-0 xl:pl-[22px]"
+                  : "xl:ml-[-42px] xl:mr-0 xl:pl-0 xl:pr-[22px]",
+              )}
+            >
               <BriefcaseIcon width="38" height="38" fill="currentColor" />
               <div className="h-full w-[1px] text-[#36f3d1] bg-current"></div>
             </div>
-            <div className="pb-[15px]">
+            <div
+              className={clsx(
+                "pb-[15px]",
+                index % 2 == 0 ? "xl:text-right" : "xl:text-left",
+              )}
+            >
               <div className="mb-4 flex flex-col">
                 <span>{education.date}</span>
                 <span>{education.location}</span>
