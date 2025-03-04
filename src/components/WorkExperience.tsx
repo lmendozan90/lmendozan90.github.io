@@ -112,17 +112,17 @@ const WorkExperience: React.FC = () => {
 
 const JobsDescription = [
   {
-    date: "07/2022 – 01/2024",
+    date: "07/2022 – Present",
     location: "Remote | USA",
     position: "Software Engineer",
     company: "CloudForecast",
     description: [
-      "Led the development and deployment of multiple React pages, utilizing graph and grid libraries to enhance data visualization and accessibility of AWS cost information.",
-      "Engineered a dynamic filtering system for AWS products and services by combining data from various sources, improving user experience through intuitive interfaces.",
-      "Developed a cost optimization feature, analyzing AWS cost overhead and generating alerts from multiple AWS policies to support cost-saving initiatives.",
-      "Collaborated closely with the CTO to align the application with business objectives and address customer requests promptly for seamless functionality.",
-      "Enhanced application features and user experience by incorporating user feedback and implementing industry best practices continuously.",
-      "Designed and implemented customized dashboards for internal use, consolidating administrative and financial data to facilitate data-driven decision-making processes.",
+      "Designed and optimized backend services using Ruby on Rails, ensuring scalable and high-performance data processing for AWS cost analysis.",
+      "Built and maintained robust RESTful APIs to facilitate seamless communication between frontend components and AWS cost analysis data.",
+      "Engineered a background job processing system using Sidekiq to handle AWS cost aggregation, ensuring efficient data retrieval and processing.",
+      "Integrated AWS SDK with Rails applications to extract and process cloud cost data, improving system efficiency and data accuracy.",
+      "Developed and optimized SQL queries and database indexing strategies to improve application performance and response times.",
+      "Led architectural discussions with the CTO to ensure backend services aligned with product and business goals.",
     ],
   },
   {
@@ -131,6 +131,15 @@ const JobsDescription = [
     position: "Software Development Engineer",
     company: "Able",
     description: [
+      "Led the integration of React into Ruby on Rails products, transforming UX and UI to elevate user satisfaction and engagement levels.",
+      "Worked collaboratively on migrating applications to a modern stack, implementing TailwindCSS, Typescript, and Vite to enhance UX, UI, and development efficiency.",
+      "Provided leadership in product development cycles, working closely with Project Managers and Scrum Masters to ensure on-time delivery of high-quality features.",
+      "Identified and resolved bugs in the codebase, conducted comprehensive code reviews, and participated in exploratory testing sessions, showcasing exceptional problem-solving skills.",
+      "Advocated for best practices by writing unit tests using Jest and RSpec, as well as end-to-end tests using Cypress, ensuring the robustness and reliability of applications.",
+      "Took on the task of maintaining and refactoring legacy code, updating it to conform to current development standards and practices.",
+
+      "Led backend development efforts using Ruby on Rails, focusing on API development and database performance optimization.",
+      "Migrated and refactored legacy Rails applications, implementing modern best practices to enhance maintainability and efficiency.",
       "Led the integration of React into Ruby on Rails products, transforming UX and UI to elevate user satisfaction and engagement levels.",
       "Worked collaboratively on migrating applications to a modern stack, implementing TailwindCSS, Typescript, and Vite to enhance UX, UI, and development efficiency.",
       "Provided leadership in product development cycles, working closely with Project Managers and Scrum Masters to ensure on-time delivery of high-quality features.",
